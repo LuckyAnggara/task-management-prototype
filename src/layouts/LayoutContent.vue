@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <div class="md:flex flex-col justify-between bg-gray-200">
+  <div class="md:flex flex-col justify-between">
     <SideMenu />
     <Header />
     <MainContent />

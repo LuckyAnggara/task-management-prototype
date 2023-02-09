@@ -1,7 +1,5 @@
 <template>
-  <div class="p-4 sm:ml-64 bg-white">
-    <div class="p-4 border-2 border-gray-200 rounded-lg bg-gray-100">
-      <router-view />
-    </div>
+  <div class="sm:ml-64 mt-32 bg-white px-4 py-2">
+    <router-view />
   </div>
 </template>

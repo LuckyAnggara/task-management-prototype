@@ -1,32 +1,32 @@
 <template>
-  <div class="p-4 sm:ml-64 bg-white">
+  <div class="fixed w-min top-0 py-4 px-4 sm:ml-64 bg-white">
     <!-- LOGO -->
-    <div
-      class="py-3 grid grid-cols-5 grid-flow-row-dense sm:divide-x-2 divide-gray-500"
-    >
-      <div class="ml-3 col-span-4 flex justify-between items-center mr-8">
-        <span class="text-3xl font-medium text-gray-600 items-center flex"
-          >Dashboard</span
-        >
-        <NotificationPopover />
+    <div class="py-3 flex justify-between items-center">
+      <div>
+        <span class="text-3xl font-medium text-gray-600 justify-self-start">{{ title }}</span>
       </div>
+      <div class="grow"></div>
+      <div class="justify-self-end flex items-center">
+        <NotificationPopover class="mr-1 sm:mr-5" />
 
-      <div class="col-span-1 flex flex-col">
-        <UserAvatar />
+        <UserAvatar class="justify-self-end" />
       </div>
     </div>
-    <hr class="solid mb-6 border-gray-500" />
+    <hr class="solid border-gray-500" />
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { initModals } from 'flowbite'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 import NotificationPopover from '../NotificationPopover.vue'
 import UserAvatar from '../UserAvatar.vue'
 
-// initialize components based on data attribute selectors
-onMounted(() => {
-  initModals()
+const route = useRoute()
+
+console.info(route.meta)
+
+const title = computed(() => {
+  return route.meta.title
 })
 </script>

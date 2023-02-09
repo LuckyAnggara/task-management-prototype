@@ -1,12 +1,12 @@
 import MainPage from '../view/workspace/MainPage.vue'
 
-export const workspaceRoutes = [
+export const boardRoutes = [
   {
-    path: '/workspace',
-    name: 'workspace',
+    path: '/board',
+    name: 'board',
     component: MainPage,
     meta: {
-      title: 'Workspace',
+      title: 'Board',
       layout: 'layout-content',
     },
   },
