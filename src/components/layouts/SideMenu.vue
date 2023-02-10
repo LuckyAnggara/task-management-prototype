@@ -1,5 +1,5 @@
 <template>
-  <aside class="fixed top-0 left-0 z-40 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0">
+  <aside class="fixed top-0 left-0 z-40 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0 shadow">
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-200 flex flex-col">
       <!-- LOGO -->
       <div class="py-6">

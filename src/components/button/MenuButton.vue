@@ -4,7 +4,7 @@
       class="flex items-center py-2 px-3 text-base font-normal rounded-lg cursor-pointer h-14"
       :class="[
         menuId == activeId
-          ? 'bg-custom-accent-green text-white'
+          ? 'bg-custom-accent-green text-white  font-medium'
           : 'text-gray-500 hover:text-custom-accent-green hover:scale-110 transition ease-in-out duration-300 hover:-translate-y-1 ',
       ]"
     >
