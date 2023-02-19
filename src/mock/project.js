@@ -7,8 +7,8 @@ export const projects = [
     title: 'consectetur laboris',
     description:
       'Velit ea qui aute mollit. Ut eiusmod adipisicing enim do cillum sint duis. Ullamco aute cupidatat dolor amet nulla pariatur irure excepteur do Lorem dolore. Minim ut consectetur est ex nostrud eiusmod veniam aliquip sint culpa adipisicing elit incididunt. Eiusmod velit officia incididunt aliquip aliqua aliqua cupidatat. Ex aliqua anim dolor dolore eiusmod id nostrud do reprehenderit.\r\n',
-    start_date: '2017-05-15T05:08:07 -07:00',
-    deadline_date: '2022-01-02T02:19:53 -07:00',
+    start_date: '2017-05-15T05:08:07',
+    deadline_date: '2022-01-02T02:19:53',
     member: [
       {
         id: 0,
@@ -32,8 +32,8 @@ export const projects = [
     title: 'esse officia',
     description:
       'Aliquip labore nisi aliquip cillum dolor commodo duis cillum fugiat minim nulla. Id cillum commodo incididunt aute fugiat. Incididunt do culpa occaecat anim consequat aliqua ad amet aliqua aliqua. Anim nisi esse id enim reprehenderit mollit in non ex commodo reprehenderit Lorem aute. Labore eu eu cupidatat tempor voluptate Lorem nulla elit culpa irure exercitation ipsum id. Aliqua proident qui id Lorem consectetur nisi aute anim cupidatat culpa adipisicing sint proident. Velit in proident ipsum exercitation minim laboris non in dolore.\r\n',
-    start_date: '2021-08-10T07:20:59 -07:00',
-    deadline_date: '2021-04-17T07:00:35 -07:00',
+    start_date: '2021-08-10T07:20:59',
+    deadline_date: '2023-02-15T23:55:35',
     member: [
       {
         id: 0,
@@ -57,8 +57,8 @@ export const projects = [
     title: 'aliqua officia',
     description:
       'Reprehenderit qui eiusmod id tempor consectetur. Eu deserunt enim veniam ullamco Lorem cillum commodo. Sunt fugiat ad occaecat occaecat Lorem adipisicing id ex consectetur ut. Excepteur culpa aliquip do magna laboris excepteur sint eiusmod amet eu. Veniam magna ullamco ut consectetur aliqua.\r\n',
-    start_date: '2016-05-29T02:42:20 -07:00',
-    deadline_date: '2016-08-24T04:26:03 -07:00',
+    start_date: '2016-05-29T02:42:20',
+    deadline_date: '2016-08-24T04:26:03',
     member: [
       {
         id: 0,
@@ -82,8 +82,8 @@ export const projects = [
     title: 'sit deserunt',
     description:
       'Nostrud ex dolor nulla mollit aute elit culpa fugiat ipsum ipsum officia. Veniam nulla fugiat voluptate veniam cillum enim exercitation proident pariatur sit dolor tempor excepteur veniam. Pariatur deserunt minim eiusmod id ex dolore ea pariatur sint labore. Cillum nostrud est ea nisi dolore labore quis mollit reprehenderit. Occaecat in est do aute aliqua in. Et reprehenderit culpa Lorem aliqua eiusmod consequat aliqua.\r\n',
-    start_date: '2019-01-21T09:20:32 -07:00',
-    deadline_date: '2018-06-04T03:35:41 -07:00',
+    start_date: '2019-01-21T09:20:32',
+    deadline_date: '2018-06-04T03:35:41',
     member: [
       {
         id: 0,
@@ -107,8 +107,8 @@ export const projects = [
     title: 'nulla veniam',
     description:
       'Laboris pariatur Lorem veniam do fugiat sunt nisi minim aute. Non qui qui labore mollit commodo quis non culpa ut do fugiat occaecat aliqua. Mollit sit et labore consequat officia dolor. Sunt reprehenderit do Lorem id veniam ex aliqua. Anim magna sint ipsum velit tempor irure do aliqua voluptate sint velit voluptate anim. Nostrud ad amet exercitation labore non consectetur deserunt veniam commodo enim excepteur Lorem. Magna tempor velit mollit nisi et enim.\r\n',
-    start_date: '2021-05-04T03:58:54 -07:00',
-    deadline_date: '2020-12-04T07:35:38 -07:00',
+    start_date: '2021-05-04T03:58:54',
+    deadline_date: '2020-12-04T07:35:38',
     member: [
       {
         id: 0,
@@ -132,8 +132,8 @@ export const projects = [
     title: 'veniam sunt',
     description:
       'Dolor veniam ipsum adipisicing cillum labore aliquip esse occaecat nisi nostrud. Nisi dolor adipisicing in labore irure aute incididunt dolor minim cillum laboris cupidatat. Nostrud anim consectetur culpa esse ipsum dolor laboris commodo dolor nostrud nulla. Amet aliquip aliqua aliqua deserunt. Ad duis officia est occaecat.\r\n',
-    start_date: '2022-03-22T11:03:30 -07:00',
-    deadline_date: '2019-09-12T06:43:47 -07:00',
+    start_date: '2022-03-22T11:03:30',
+    deadline_date: '2019-09-12T06:43:47',
     member: [
       {
         id: 0,
@@ -157,8 +157,8 @@ export const projects = [
     title: 'laborum non',
     description:
       'Dolore deserunt nulla pariatur ut ullamco sit. Exercitation reprehenderit voluptate magna id commodo id in et esse proident voluptate velit reprehenderit id. Ut amet ex dolor fugiat adipisicing quis occaecat excepteur magna. Esse laborum consequat dolor labore ut ut in nulla eu fugiat labore minim deserunt.\r\n',
-    start_date: '2018-08-28T03:47:05 -07:00',
-    deadline_date: '2016-12-19T11:58:48 -07:00',
+    start_date: '2018-08-28T03:47:05',
+    deadline_date: '2016-12-19T11:58:48',
     member: [
       {
         id: 0,
@@ -182,8 +182,8 @@ export const projects = [
     title: 'mollit deserunt',
     description:
       'Dolore non nulla amet eiusmod aliquip ea aute et pariatur exercitation anim consequat sint laboris. Ea quis ullamco irure nostrud minim incididunt. Nisi id laboris ad incididunt amet elit cupidatat fugiat fugiat.\r\n',
-    start_date: '2015-07-23T06:02:42 -07:00',
-    deadline_date: '2020-10-27T03:41:55 -07:00',
+    start_date: '2015-07-23T06:02:42',
+    deadline_date: '2020-10-27T03:41:55',
     member: [
       {
         id: 0,
@@ -207,8 +207,8 @@ export const projects = [
     title: 'ipsum excepteur',
     description:
       'Dolore velit nostrud deserunt ex fugiat quis voluptate officia cupidatat. Ipsum est incididunt tempor adipisicing tempor fugiat aute ad id ea adipisicing id in commodo. Dolor sit irure ullamco excepteur sit esse non adipisicing sint veniam.\r\n',
-    start_date: '2020-12-29T04:10:09 -07:00',
-    deadline_date: '2021-12-22T08:32:21 -07:00',
+    start_date: '2020-12-29T04:10:09',
+    deadline_date: '2021-12-22T08:32:21',
     member: [
       {
         id: 0,
@@ -232,8 +232,8 @@ export const projects = [
     title: 'Lorem sit',
     description:
       'Sint consequat sit nisi enim consequat. Reprehenderit magna dolore incididunt voluptate velit culpa cupidatat irure. Commodo nostrud mollit non occaecat eu pariatur occaecat magna occaecat. Eu proident qui qui tempor magna cupidatat esse do sunt commodo duis elit. Nisi ut fugiat cupidatat veniam enim nulla. Officia Lorem nisi occaecat sit proident ullamco duis cillum id incididunt nulla Lorem enim. Elit occaecat enim deserunt esse exercitation veniam ad ea ipsum.\r\n',
-    start_date: '2015-11-27T04:05:45 -07:00',
-    deadline_date: '2021-11-13T04:34:29 -07:00',
+    start_date: '2015-11-27T04:05:45',
+    deadline_date: '2021-11-13T04:34:29',
     member: [
       {
         id: 0,
@@ -257,8 +257,8 @@ export const projects = [
     title: 'nisi ea',
     description:
       'Nisi eu voluptate consequat eiusmod pariatur proident nulla excepteur dolore dolore in in et. Consectetur sit deserunt ea laboris magna velit consectetur incididunt. Nulla anim sunt nisi duis.\r\n',
-    start_date: '2019-05-10T04:19:39 -07:00',
-    deadline_date: '2021-05-17T04:19:08 -07:00',
+    start_date: '2019-05-10T04:19:39',
+    deadline_date: '2021-05-17T04:19:08',
     member: [
       {
         id: 0,
@@ -282,8 +282,8 @@ export const projects = [
     title: 'culpa esse',
     description:
       'Laboris enim non veniam commodo anim est incididunt mollit pariatur adipisicing deserunt aute. Enim cillum dolor aliqua deserunt anim aliqua. Culpa qui mollit anim eiusmod exercitation in. Amet aute pariatur ex laboris ut ullamco aliquip proident. Incididunt ea aliqua officia proident nisi Lorem adipisicing aliquip aute sint mollit enim.\r\n',
-    start_date: '2016-02-10T12:09:11 -07:00',
-    deadline_date: '2017-12-25T07:52:46 -07:00',
+    start_date: '2016-02-10T12:09:11',
+    deadline_date: '2017-12-25T07:52:46',
     member: [
       {
         id: 0,
@@ -307,8 +307,8 @@ export const projects = [
     title: 'commodo enim',
     description:
       'Lorem cupidatat ea aliqua Lorem cillum. Minim et ullamco pariatur ex est eu in deserunt dolor veniam esse deserunt. Id sint laboris proident exercitation aliqua fugiat eu. Aute proident fugiat aute et sint in anim ad do ex velit. Pariatur sunt incididunt amet irure. Aliqua excepteur aute non velit. Aliquip minim in do sint fugiat id laboris veniam.\r\n',
-    start_date: '2017-12-01T02:59:24 -07:00',
-    deadline_date: '2021-07-27T09:52:38 -07:00',
+    start_date: '2017-12-01T02:59:24',
+    deadline_date: '2021-07-27T09:52:38',
     member: [
       {
         id: 0,
@@ -332,8 +332,8 @@ export const projects = [
     title: 'enim sunt',
     description:
       'Dolor ex adipisicing qui consectetur dolor ad aute esse nostrud dolor proident excepteur aliquip. Voluptate sint esse nulla sunt labore labore ullamco pariatur officia. Tempor aliqua magna in ex id tempor labore laborum ut.\r\n',
-    start_date: '2021-03-15T01:12:07 -07:00',
-    deadline_date: '2016-07-14T07:29:23 -07:00',
+    start_date: '2021-03-15T01:12:07',
+    deadline_date: '2016-07-14T07:29:23',
     member: [
       {
         id: 0,
@@ -357,8 +357,8 @@ export const projects = [
     title: 'amet aliquip',
     description:
       'Esse duis qui duis ut dolore anim consectetur. Eu aliqua aliquip consequat in laboris. Adipisicing qui sint adipisicing mollit minim eu commodo. Ea nisi reprehenderit Lorem ad sint eu mollit labore adipisicing tempor deserunt. Laboris cupidatat incididunt fugiat consectetur duis dolor sit minim ex nisi. Duis sint fugiat magna commodo deserunt dolore enim do aliquip officia labore.\r\n',
-    start_date: '2019-08-06T04:10:45 -07:00',
-    deadline_date: '2022-10-26T03:26:39 -07:00',
+    start_date: '2019-08-06T04:10:45',
+    deadline_date: '2022-10-26T03:26:39',
     member: [
       {
         id: 0,
@@ -382,8 +382,8 @@ export const projects = [
     title: 'veniam amet',
     description:
       'Do excepteur amet cillum dolor laborum ea deserunt anim do in ea ut consectetur consectetur. Nisi occaecat aliqua commodo esse. Duis exercitation tempor sit esse quis pariatur consequat. Labore excepteur tempor non fugiat. Minim ea dolor fugiat laborum qui enim cupidatat.\r\n',
-    start_date: '2014-09-23T11:34:16 -07:00',
-    deadline_date: '2014-08-08T01:34:22 -07:00',
+    start_date: '2014-09-23T11:34:16',
+    deadline_date: '2014-08-08T01:34:22',
     member: [
       {
         id: 0,
@@ -407,8 +407,8 @@ export const projects = [
     title: 'pariatur sit',
     description:
       'Laboris Lorem enim amet culpa. Nisi duis eiusmod sit id mollit deserunt. Do minim consectetur ut duis nostrud nostrud velit magna ex ut commodo. Fugiat elit Lorem ea irure sit sint laborum. Aliquip sit pariatur nulla est laborum minim.\r\n',
-    start_date: '2020-10-30T12:12:27 -07:00',
-    deadline_date: '2022-03-01T05:37:18 -07:00',
+    start_date: '2020-10-30T12:12:27',
+    deadline_date: '2022-03-01T05:37:18',
     member: [
       {
         id: 0,
@@ -432,8 +432,8 @@ export const projects = [
     title: 'mollit consequat',
     description:
       'In qui ut exercitation anim ipsum id amet. Cupidatat laborum ut commodo eu reprehenderit reprehenderit aliqua. Culpa cupidatat proident excepteur incididunt et sint. Deserunt cupidatat dolore esse do cillum reprehenderit. Eu id sint sint qui ex labore duis irure quis labore Lorem quis ullamco Lorem. Culpa nostrud in excepteur nostrud qui ex. Tempor reprehenderit fugiat dolor laborum.\r\n',
-    start_date: '2017-02-17T03:58:49 -07:00',
-    deadline_date: '2017-06-03T09:14:23 -07:00',
+    start_date: '2017-02-17T03:58:49',
+    deadline_date: '2017-06-03T09:14:23',
     member: [
       {
         id: 0,
@@ -457,8 +457,8 @@ export const projects = [
     title: 'irure tempor',
     description:
       'Excepteur ullamco deserunt sit tempor qui tempor reprehenderit labore nisi proident. Pariatur ex occaecat velit ad cillum pariatur fugiat et dolore enim excepteur do. Proident velit dolor incididunt amet amet proident eiusmod. Culpa reprehenderit incididunt in tempor officia esse adipisicing pariatur culpa Lorem fugiat.\r\n',
-    start_date: '2014-12-06T01:06:47 -07:00',
-    deadline_date: '2020-06-05T10:15:25 -07:00',
+    start_date: '2014-12-06T01:06:47',
+    deadline_date: '2020-06-05T10:15:25',
     member: [
       {
         id: 0,
@@ -482,8 +482,8 @@ export const projects = [
     title: 'minim nostrud',
     description:
       'Veniam pariatur tempor mollit eiusmod pariatur amet ullamco labore pariatur nostrud laborum. Sint officia voluptate sit mollit qui aliqua deserunt velit duis eiusmod. Ipsum aute duis eu culpa incididunt amet. In ad qui aliqua ipsum Lorem in. Ut Lorem sit consectetur cupidatat adipisicing dolor dolor irure proident exercitation. Exercitation nisi quis ipsum pariatur in anim ad.\r\n',
-    start_date: '2018-02-26T08:06:57 -07:00',
-    deadline_date: '2021-10-14T08:39:07 -07:00',
+    start_date: '2018-02-26T08:06:57',
+    deadline_date: '2021-10-14T08:39:07',
     member: [
       {
         id: 0,
@@ -507,8 +507,8 @@ export const projects = [
     title: 'sit dolor',
     description:
       'Velit fugiat adipisicing nostrud dolore Lorem ex veniam laborum ullamco. Ex tempor aliqua sit laboris cillum qui ullamco mollit laborum. Lorem cupidatat nostrud minim ad consectetur magna sint culpa nisi ullamco labore proident. Culpa fugiat aute aliqua deserunt minim deserunt laboris ex et aute aliquip do sunt.\r\n',
-    start_date: '2014-08-11T05:31:38 -07:00',
-    deadline_date: '2018-11-19T11:39:33 -07:00',
+    start_date: '2014-08-11T05:31:38',
+    deadline_date: '2023-02-11T07:00:35',
     member: [
       {
         id: 0,
@@ -532,8 +532,8 @@ export const projects = [
     title: 'nostrud proident',
     description:
       'Non veniam velit id fugiat commodo occaecat deserunt aliquip incididunt. Lorem commodo adipisicing elit consequat anim sunt commodo voluptate consequat tempor id nulla. Excepteur eiusmod reprehenderit mollit ad velit exercitation eiusmod deserunt consectetur pariatur. Eu et consectetur aliquip sint duis excepteur ex velit labore. Voluptate occaecat dolor voluptate irure deserunt reprehenderit quis nulla. Commodo duis consectetur laboris proident nulla in eu. Tempor cillum quis non anim aute ullamco ea.\r\n',
-    start_date: '2019-07-21T08:12:43 -07:00',
-    deadline_date: '2018-01-05T07:47:23 -07:00',
+    start_date: '2019-07-21T08:12:43',
+    deadline_date: '2018-01-05T07:47:23',
     member: [
       {
         id: 0,
@@ -557,8 +557,8 @@ export const projects = [
     title: 'labore proident',
     description:
       'Amet excepteur ipsum aliquip consectetur et anim deserunt veniam fugiat. Laborum deserunt ipsum eiusmod culpa deserunt reprehenderit id aliqua aliquip veniam veniam excepteur ullamco in. Magna dolore Lorem adipisicing culpa eu eiusmod in velit nisi anim occaecat voluptate. Adipisicing et quis ex dolore do pariatur. Exercitation aliqua mollit aliquip et aliqua adipisicing dolore sit est occaecat velit esse. Duis irure Lorem Lorem ut ad aliqua non in ea irure proident enim.\r\n',
-    start_date: '2018-05-30T03:11:59 -07:00',
-    deadline_date: '2020-04-13T06:45:17 -07:00',
+    start_date: '2018-05-30T03:11:59',
+    deadline_date: '2020-04-13T06:45:17',
     member: [
       {
         id: 0,
@@ -582,8 +582,8 @@ export const projects = [
     title: 'eiusmod commodo',
     description:
       'Mollit amet adipisicing velit ullamco deserunt commodo incididunt incididunt cupidatat. Exercitation ea voluptate ut ullamco non do exercitation proident enim proident duis commodo. Ad labore cupidatat irure consectetur ad officia laborum amet.\r\n',
-    start_date: '2017-11-17T06:30:16 -07:00',
-    deadline_date: '2022-03-09T07:38:54 -07:00',
+    start_date: '2017-11-17T06:30:16',
+    deadline_date: '2022-03-09T07:38:54',
     member: [
       {
         id: 0,
@@ -607,8 +607,8 @@ export const projects = [
     title: 'in dolore',
     description:
       'Consequat commodo pariatur eiusmod duis excepteur nisi cillum sint aliquip nisi laborum nulla excepteur adipisicing. Aute laboris anim sunt deserunt nostrud aliqua deserunt officia aliquip. Mollit labore enim cillum nostrud quis dolore duis incididunt eu labore Lorem in. Ullamco irure voluptate occaecat fugiat. Ullamco ipsum esse pariatur et tempor. Ipsum elit incididunt nisi consectetur ad nisi. Cillum duis labore cillum irure consequat magna eiusmod ut eiusmod amet.\r\n',
-    start_date: '2014-12-29T02:48:56 -07:00',
-    deadline_date: '2014-01-18T05:26:27 -07:00',
+    start_date: '2014-12-29T02:48:56',
+    deadline_date: '2014-01-18T05:26:27',
     member: [
       {
         id: 0,
@@ -632,8 +632,8 @@ export const projects = [
     title: 'ullamco cillum',
     description:
       'Anim et aliqua tempor cillum nostrud do minim culpa aliqua ut voluptate irure. Non esse ea cupidatat minim nostrud laboris enim ea magna do do laboris. Eiusmod nostrud nulla ipsum consequat qui nisi. Fugiat Lorem duis laboris consequat cillum occaecat ullamco sint aliquip. Veniam ex excepteur qui excepteur est voluptate minim. Aliqua minim consectetur id sunt occaecat adipisicing ad esse tempor labore id. Aliquip officia dolor est qui tempor reprehenderit ex ex laborum culpa eu est ipsum.\r\n',
-    start_date: '2020-04-29T07:07:25 -07:00',
-    deadline_date: '2021-06-05T05:42:47 -07:00',
+    start_date: '2020-04-29T07:07:25',
+    deadline_date: '2021-06-05T05:42:47',
     member: [
       {
         id: 0,
@@ -657,8 +657,8 @@ export const projects = [
     title: 'deserunt tempor',
     description:
       'Non ex excepteur minim consectetur adipisicing id pariatur aute culpa nisi nostrud nostrud anim amet. Consectetur et nisi laborum tempor id. Laboris et cupidatat cillum anim mollit commodo sunt incididunt consequat laboris. Mollit anim culpa labore aliquip elit nostrud ipsum commodo amet do consequat ullamco eu. Sint cupidatat sint consequat non dolor sint tempor ea dolore ea esse consectetur amet ut.\r\n',
-    start_date: '2018-02-27T05:46:36 -07:00',
-    deadline_date: '2019-12-03T06:11:39 -07:00',
+    start_date: '2018-02-27T05:46:36',
+    deadline_date: '2019-12-03T06:11:39',
     member: [
       {
         id: 0,
@@ -682,8 +682,8 @@ export const projects = [
     title: 'ut anim',
     description:
       'Deserunt mollit aliqua in reprehenderit aliqua Lorem adipisicing exercitation. Consectetur mollit pariatur pariatur minim proident do. Nostrud reprehenderit labore dolore qui. Sunt sit fugiat dolor aliqua aliqua aliquip ea. Pariatur aute aliquip ad pariatur esse consectetur ad quis.\r\n',
-    start_date: '2018-04-25T07:48:46 -07:00',
-    deadline_date: '2017-04-13T04:27:49 -07:00',
+    start_date: '2018-04-25T07:48:46',
+    deadline_date: '2017-04-13T04:27:49',
     member: [
       {
         id: 0,
@@ -707,8 +707,8 @@ export const projects = [
     title: 'exercitation ullamco',
     description:
       'Ut adipisicing ullamco et incididunt laboris tempor aliqua labore. Aliqua irure nulla culpa enim aliqua consectetur id ut nulla consequat minim consequat labore dolor. Ut aute laboris laborum culpa esse quis consectetur laborum laborum aliqua laboris sunt incididunt. Nisi deserunt minim tempor dolor occaecat officia excepteur aliquip nostrud laboris officia.\r\n',
-    start_date: '2017-08-08T07:28:17 -07:00',
-    deadline_date: '2016-02-03T10:26:30 -07:00',
+    start_date: '2017-08-08T07:28:17',
+    deadline_date: '2016-02-03T10:26:30',
     member: [
       {
         id: 0,
@@ -732,8 +732,8 @@ export const projects = [
     title: 'laboris aute',
     description:
       'Mollit fugiat est consectetur consectetur ea exercitation velit incididunt aliquip fugiat dolore adipisicing anim. Sunt irure deserunt amet ea ex qui. Officia est sit ullamco esse officia velit labore amet exercitation eiusmod consectetur aliquip excepteur. Voluptate cillum tempor velit ea. Ut nulla aliquip esse sit laborum consequat dolore consequat aliqua. Voluptate minim dolore labore est.\r\n',
-    start_date: '2017-04-04T02:08:55 -07:00',
-    deadline_date: '2014-04-28T05:18:17 -07:00',
+    start_date: '2017-04-04T02:08:55',
+    deadline_date: '2014-04-28T05:18:17',
     member: [
       {
         id: 0,
@@ -757,8 +757,8 @@ export const projects = [
     title: 'nulla laborum',
     description:
       'Ullamco esse excepteur dolor eiusmod nulla qui labore nulla reprehenderit. Nulla eu id deserunt tempor dolore dolor exercitation aute id pariatur excepteur velit in dolor. Officia aliquip nisi Lorem Lorem tempor tempor consectetur. Elit ut occaecat amet nisi excepteur voluptate minim pariatur est.\r\n',
-    start_date: '2019-02-18T07:09:43 -07:00',
-    deadline_date: '2018-05-06T11:47:47 -07:00',
+    start_date: '2019-02-18T07:09:43',
+    deadline_date: '2018-05-06T11:47:47',
     member: [
       {
         id: 0,
@@ -782,8 +782,8 @@ export const projects = [
     title: 'nisi eiusmod',
     description:
       'Ullamco veniam nulla reprehenderit est et sint ullamco excepteur consequat enim dolor aute. Eiusmod eu Lorem cillum tempor et duis quis anim amet nostrud pariatur. Qui qui occaecat irure tempor cillum adipisicing ullamco occaecat dolor aliqua sunt adipisicing. Cupidatat sint ad mollit enim eu fugiat magna tempor in nulla minim ipsum consectetur.\r\n',
-    start_date: '2021-02-08T09:28:03 -07:00',
-    deadline_date: '2016-09-25T05:02:51 -07:00',
+    start_date: '2021-02-08T09:28:03',
+    deadline_date: '2016-09-25T05:02:51',
     member: [
       {
         id: 0,
@@ -807,8 +807,8 @@ export const projects = [
     title: 'pariatur eu',
     description:
       'Laboris ipsum velit dolore pariatur deserunt est excepteur quis consectetur velit consequat cupidatat incididunt. Eu voluptate magna incididunt excepteur pariatur sint ea do consectetur officia aliqua esse aute aute. Labore ea aute excepteur nulla laborum commodo ipsum labore dolore anim est. Cupidatat et laboris non eu dolore labore consectetur dolor do qui consectetur pariatur officia aute. Magna sit tempor veniam laborum voluptate elit sit.\r\n',
-    start_date: '2015-05-04T02:27:18 -07:00',
-    deadline_date: '2015-07-30T02:18:59 -07:00',
+    start_date: '2015-05-04T02:27:18',
+    deadline_date: '2015-07-30T02:18:59',
     member: [
       {
         id: 0,
@@ -832,8 +832,8 @@ export const projects = [
     title: 'magna dolore',
     description:
       'Non do laboris ullamco occaecat et proident ut sunt. Anim culpa aute elit exercitation deserunt do Lorem. Esse ipsum non velit fugiat cupidatat magna labore aute aliquip aute deserunt dolore. Esse ea do amet consectetur minim minim irure laborum et velit adipisicing nisi fugiat. Laboris ut est officia eu.\r\n',
-    start_date: '2020-10-04T04:03:08 -07:00',
-    deadline_date: '2016-10-12T01:01:47 -07:00',
+    start_date: '2020-10-04T04:03:08',
+    deadline_date: '2016-10-12T01:01:47',
     member: [
       {
         id: 0,
@@ -857,8 +857,8 @@ export const projects = [
     title: 'irure et',
     description:
       'Amet duis enim id et irure do ad incididunt non. In ea quis nulla mollit minim quis enim consectetur magna deserunt sint tempor fugiat labore. Exercitation nulla esse occaecat eu laborum occaecat. Nisi minim nisi magna dolore veniam occaecat velit exercitation aute sit aliqua.\r\n',
-    start_date: '2016-04-17T10:09:04 -07:00',
-    deadline_date: '2017-01-19T07:05:24 -07:00',
+    start_date: '2016-04-17T10:09:04',
+    deadline_date: '2017-01-19T07:05:24',
     member: [
       {
         id: 0,
@@ -880,9 +880,10 @@ export const projects = [
     guid: 'dd5e49ef-8a0f-403f-aed9-af8a2adbd54f',
     status: 'Ongoing',
     title: 'aliquip cillum',
-    description: 'Exercitation ea id nisi irure do. Et sint qui ex sint amet deserunt cillum deserunt. Ullamco aliquip anim irure eu.\r\n',
-    start_date: '2021-10-23T11:29:30 -07:00',
-    deadline_date: '2017-07-09T12:35:54 -07:00',
+    description:
+      'Exercitation ea id nisi irure do. Et sint qui ex sint amet deserunt cillum deserunt. Ullamco aliquip anim irure eu.\r\n',
+    start_date: '2021-10-23T11:29:30',
+    deadline_date: '2017-07-09T12:35:54',
     member: [
       {
         id: 0,
@@ -906,8 +907,8 @@ export const projects = [
     title: 'nisi non',
     description:
       'Ea fugiat minim culpa sunt enim enim veniam. Anim nostrud culpa irure mollit quis exercitation dolor ea veniam anim sint. Eiusmod Lorem commodo sunt reprehenderit dolor occaecat quis anim irure eu ex proident. Velit non qui nulla quis consectetur ex dolore ad incididunt.\r\n',
-    start_date: '2019-01-13T02:15:56 -07:00',
-    deadline_date: '2015-03-31T04:35:22 -07:00',
+    start_date: '2019-01-13T02:15:56',
+    deadline_date: '2015-03-31T04:35:22',
     member: [
       {
         id: 0,
@@ -931,8 +932,8 @@ export const projects = [
     title: 'laborum ut',
     description:
       'Quis cillum proident fugiat cillum reprehenderit dolore aliqua aliquip incididunt velit. Qui consectetur deserunt nostrud nostrud fugiat. In voluptate duis cupidatat voluptate esse anim sint minim do. Lorem enim nostrud dolor exercitation voluptate ipsum officia fugiat laboris. Laboris sunt commodo qui sunt Lorem. Pariatur ad commodo irure quis esse enim pariatur incididunt adipisicing amet et sint elit. Irure deserunt do quis aliqua nostrud irure et.\r\n',
-    start_date: '2016-07-27T03:38:11 -07:00',
-    deadline_date: '2015-05-03T09:48:31 -07:00',
+    start_date: '2016-07-27T03:38:11',
+    deadline_date: '2015-05-03T09:48:31',
     member: [
       {
         id: 0,
@@ -956,8 +957,8 @@ export const projects = [
     title: 'excepteur officia',
     description:
       'Aliqua sint ea enim incididunt ex duis veniam amet est in id aliquip. Voluptate Lorem veniam duis non nulla laboris duis ex aliqua ea consectetur in sunt. Mollit adipisicing adipisicing amet sunt cupidatat ut ipsum elit excepteur cupidatat incididunt pariatur ea.\r\n',
-    start_date: '2015-12-16T10:25:50 -07:00',
-    deadline_date: '2017-05-06T06:29:35 -07:00',
+    start_date: '2015-12-16T10:25:50',
+    deadline_date: '2017-05-06T06:29:35',
     member: [
       {
         id: 0,
@@ -981,8 +982,8 @@ export const projects = [
     title: 'voluptate occaecat',
     description:
       'Eiusmod ullamco consequat quis voluptate sint qui. Reprehenderit minim mollit culpa eu cillum non aliquip incididunt. Est aliquip eu veniam et sunt ut elit mollit.\r\n',
-    start_date: '2021-06-06T06:11:32 -07:00',
-    deadline_date: '2019-09-26T03:06:47 -07:00',
+    start_date: '2021-06-06T06:11:32',
+    deadline_date: '2019-09-26T03:06:47',
     member: [
       {
         id: 0,
@@ -1006,8 +1007,8 @@ export const projects = [
     title: 'veniam id',
     description:
       'Id cillum qui aliqua adipisicing reprehenderit officia. Quis aliqua laboris ullamco consectetur ipsum. Aliquip cupidatat voluptate occaecat excepteur ullamco non elit eiusmod nulla ea. Labore sit aute non velit cillum nostrud consectetur velit ea minim ad pariatur aute.\r\n',
-    start_date: '2022-04-15T03:46:34 -07:00',
-    deadline_date: '2016-11-23T08:15:09 -07:00',
+    start_date: '2022-04-15T03:46:34',
+    deadline_date: '2016-11-23T08:15:09',
     member: [
       {
         id: 0,
@@ -1031,8 +1032,8 @@ export const projects = [
     title: 'quis adipisicing',
     description:
       'Eu amet et eu qui aute nostrud sint minim consectetur voluptate ex voluptate nostrud nulla. Ipsum dolor qui exercitation adipisicing velit fugiat. Et non occaecat do aliquip adipisicing. Aute proident laborum duis ea ut pariatur minim dolor reprehenderit deserunt. Excepteur adipisicing dolore nisi enim deserunt voluptate incididunt elit aute ex duis.\r\n',
-    start_date: '2021-10-30T09:28:03 -07:00',
-    deadline_date: '2021-09-15T04:07:50 -07:00',
+    start_date: '2021-10-30T09:28:03',
+    deadline_date: '2021-09-15T04:07:50',
     member: [
       {
         id: 0,
@@ -1056,8 +1057,8 @@ export const projects = [
     title: 'voluptate cupidatat',
     description:
       'Aute occaecat deserunt incididunt consequat. Dolore ullamco mollit incididunt proident. Exercitation excepteur dolore id ipsum. Dolor occaecat ea cillum cupidatat eiusmod in. Adipisicing aute aliqua adipisicing est adipisicing ullamco sit dolore in velit tempor ullamco elit. Ex amet voluptate amet do amet ipsum anim ea laboris.\r\n',
-    start_date: '2020-12-23T03:10:00 -07:00',
-    deadline_date: '2019-10-18T10:55:11 -07:00',
+    start_date: '2020-12-23T03:10:00',
+    deadline_date: '2019-10-18T10:55:11',
     member: [
       {
         id: 0,
@@ -1081,8 +1082,8 @@ export const projects = [
     title: 'incididunt deserunt',
     description:
       'Ut excepteur cupidatat veniam aute voluptate commodo. Elit magna minim ut minim. Nulla culpa dolore incididunt sit ea. Deserunt reprehenderit anim reprehenderit tempor consectetur nostrud ad ipsum Lorem proident enim in. Officia do tempor nisi aliquip nulla nulla laboris id tempor. Amet consequat Lorem duis cupidatat adipisicing nulla minim et proident officia commodo velit tempor. Reprehenderit consequat sit laboris Lorem aliqua et.\r\n',
-    start_date: '2015-09-05T08:31:44 -07:00',
-    deadline_date: '2016-04-24T03:04:56 -07:00',
+    start_date: '2015-09-05T08:31:44',
+    deadline_date: '2016-04-24T03:04:56',
     member: [
       {
         id: 0,
@@ -1106,8 +1107,8 @@ export const projects = [
     title: 'fugiat nostrud',
     description:
       'Eiusmod commodo est minim deserunt nulla dolor nisi. Sit anim commodo consectetur amet non non aute quis nisi nisi. Cupidatat do cillum duis ea pariatur esse voluptate ut. Culpa velit minim magna reprehenderit consequat officia nisi ullamco.\r\n',
-    start_date: '2021-09-02T11:49:44 -07:00',
-    deadline_date: '2016-03-30T09:25:16 -07:00',
+    start_date: '2021-09-02T11:49:44',
+    deadline_date: '2016-03-30T09:25:16',
     member: [
       {
         id: 0,
@@ -1131,8 +1132,8 @@ export const projects = [
     title: 'irure ea',
     description:
       'Ex quis Lorem id elit ullamco excepteur ipsum consectetur elit pariatur et. Excepteur non eiusmod et sunt non voluptate. In culpa consectetur proident fugiat sunt Lorem nostrud. Ipsum dolor eu commodo laborum eiusmod officia laboris esse. Commodo sunt consectetur dolor incididunt enim laborum pariatur adipisicing sit enim. Nostrud tempor magna ipsum deserunt.\r\n',
-    start_date: '2014-08-11T02:37:37 -07:00',
-    deadline_date: '2021-04-18T10:30:54 -07:00',
+    start_date: '2014-08-11T02:37:37',
+    deadline_date: '2021-04-18T10:30:54',
     member: [
       {
         id: 0,
@@ -1156,8 +1157,8 @@ export const projects = [
     title: 'deserunt veniam',
     description:
       'Commodo dolor eiusmod consequat exercitation deserunt in nostrud. Sint cupidatat nulla officia exercitation aute incididunt enim nulla pariatur eiusmod laborum. Enim dolore ut eu ad. Id anim aute aute duis do quis occaecat. Ex cupidatat qui consectetur cillum consectetur laborum velit id Lorem incididunt adipisicing. Eu reprehenderit proident occaecat occaecat voluptate reprehenderit id in consectetur proident id anim nulla in.\r\n',
-    start_date: '2016-10-12T11:50:37 -07:00',
-    deadline_date: '2020-04-25T03:35:21 -07:00',
+    start_date: '2016-10-12T11:50:37',
+    deadline_date: '2020-04-25T03:35:21',
     member: [
       {
         id: 0,
@@ -1181,8 +1182,8 @@ export const projects = [
     title: 'magna ad',
     description:
       'Id consectetur aute amet amet laborum anim ipsum fugiat. Consequat incididunt minim dolore consectetur irure. Voluptate nulla laboris occaecat aliquip voluptate aute amet adipisicing aute voluptate. Sunt laborum pariatur veniam id in labore cillum. Sunt officia occaecat occaecat cupidatat dolore minim tempor consequat culpa fugiat ad do non veniam.\r\n',
-    start_date: '2018-02-27T07:26:21 -07:00',
-    deadline_date: '2018-10-04T07:31:57 -07:00',
+    start_date: '2018-02-27T07:26:21',
+    deadline_date: '2018-10-04T07:31:57',
     member: [
       {
         id: 0,
@@ -1206,8 +1207,8 @@ export const projects = [
     title: 'pariatur nulla',
     description:
       'Do duis sunt proident adipisicing laboris in. Cupidatat nisi occaecat aliquip commodo elit magna laborum in nisi anim voluptate fugiat nulla. Ut adipisicing tempor Lorem adipisicing ea eu excepteur velit. Sunt veniam do excepteur non nisi sunt cupidatat fugiat culpa incididunt deserunt id est aliquip. Magna nulla nisi amet veniam et ullamco ullamco anim veniam Lorem Lorem cupidatat.\r\n',
-    start_date: '2020-08-30T07:11:53 -07:00',
-    deadline_date: '2017-09-17T10:08:35 -07:00',
+    start_date: '2020-08-30T07:11:53',
+    deadline_date: '2017-09-17T10:08:35',
     member: [
       {
         id: 0,
@@ -1231,8 +1232,8 @@ export const projects = [
     title: 'velit duis',
     description:
       'Ipsum cupidatat fugiat velit aliqua ea sunt deserunt Lorem eu. Occaecat id non fugiat labore in proident sunt sint labore dolor occaecat do voluptate commodo. Dolore dolore et cillum incididunt amet laborum quis qui amet minim. Dolor minim in sint qui ex. Incididunt amet ex nisi magna. Ad eiusmod culpa et irure officia quis sint aliquip esse nostrud Lorem. Culpa dolor commodo elit ad qui irure eiusmod ipsum.\r\n',
-    start_date: '2014-09-04T07:35:55 -07:00',
-    deadline_date: '2016-03-03T03:27:32 -07:00',
+    start_date: '2014-09-04T07:35:55',
+    deadline_date: '2016-03-03T03:27:32',
     member: [
       {
         id: 0,

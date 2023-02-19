@@ -1,180 +1,196 @@
 <template>
   <div class="flex flex-col">
-    <div class="flex sm:flex-row items-start sm:items-center justify-end lg:justify-between flex-col">
+    <div
+      class="flex sm:flex-row items-start sm:items-center flex-col justify-between"
+    >
       <!-- SEARCH -->
-
-      <div class="relative sm:w-96 w-full h-full md:mb-0 mb-4">
-        <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none">
-          <div class="grid place-items-center h-full w-12 text-gray-500">
-            <MagnifyingGlassIcon class="w-7 h-7" />
-          </div>
-        </div>
-        <input
-          autocomplete="off"
-          v-model="searchValue"
-          type="text"
-          id="simple-search"
-          class="bg-gray-50 border-none shadow-sm text-gray-600 outline-none text-sm rounded-lg place-items-start block w-full pl-12 p-2.5 py-3 focus:outline-custom-accent-green"
-          placeholder="Find Project"
-          required
-        />
-      </div>
-
+      <SearchBar />
       <!-- SORT -->
-      <div class="flex items-center">
-        <div class="mr-4 flex space-x-2 items-center">
-          <BarsArrowUpIcon
-            class="w-8 h-8 hover:scale-110 transition ease-in-out duration-300 cursor-pointer text-gray-500 hover:text-custom-accent-green"
-            v-show="isDesc"
-            @click="isDesc = !isDesc"
-          />
+      <div class="flex items-center w-full sm:w-fit">
+        <FilterDropdown class="grow sm:hidden" />
+        <Transition name="slide-up" :duration="'1000'">
+          <div
+            class="mr-4 flex space-x-2 items-center flex-none"
+            v-show="projectStore.viewActive == 'GRID'"
+          >
+            <BarsArrowUpIcon
+              class="w-8 h-8 hover:scale-110 transition ease-in-out duration-300 cursor-pointer text-gray-500 hover:text-custom-accent-green"
+              v-show="projectStore.isDesc"
+              @click="projectStore.isDesc = !projectStore.isDesc"
+            />
 
-          <BarsArrowDownIcon
-            class="w-8 h-8 hover:scale-110 transition ease-in-out duration-300 cursor-pointer text-gray-500 hover:text-custom-accent-green"
-            v-show="!isDesc"
-            @click="isDesc = !isDesc"
-          />
-
-          <span v-show="isDesc" class="text-gray-500 text-sm">Most Recent</span>
-          <span v-show="!isDesc" class="text-gray-500 text-sm">Most Lately</span>
-        </div>
-        <div class="flex space-x-2">
+            <BarsArrowDownIcon
+              class="w-8 h-8 hover:scale-110 transition ease-in-out duration-300 cursor-pointer text-gray-500 hover:text-custom-accent-green"
+              v-show="!projectStore.isDesc"
+              @click="projectStore.isDesc = !projectStore.isDesc"
+            />
+            <span
+              v-show="projectStore.isDesc"
+              class="text-gray-500 text-sm sm:flex hidden"
+              >Most Recent</span
+            >
+            <span
+              v-show="!projectStore.isDesc"
+              class="text-gray-500 text-sm sm:flex hidden"
+              >Most Lately</span
+            >
+          </div>
+        </Transition>
+        <div class="flex space-x-2 flex-none">
           <Squares2X2Icon
-            :class="[isGrid ? 'text-custom-accent-green ' : 'text-gray-500']"
+            :class="[
+              projectStore.viewActive == 'GRID'
+                ? 'text-custom-accent-green '
+                : 'text-gray-500',
+            ]"
             class="w-8 h-8 hover:scale-110 transition ease-in-out duration-300 cursor-pointer hover:text-custom-accent-green"
+            @click="projectStore.viewActive = 'GRID'"
           />
+
+          <!-- asdasd -->
           <Bars3Icon
-            :class="[!isGrid ? 'text-custom-accent-green ' : 'text-gray-500']"
+            :class="[
+              projectStore.viewActive == 'LIST'
+                ? 'text-custom-accent-green '
+                : 'text-gray-500',
+            ]"
             class="w-8 h-8 hover:scale-110 transition ease-in-out duration-300 cursor-pointer hover:text-custom-accent-green"
+            @click="projectStore.viewActive = 'LIST'"
+          />
+
+          <TableCellsIcon
+            :class="[
+              projectStore.viewActive == 'TABLE'
+                ? 'text-custom-accent-green '
+                : 'text-gray-500',
+            ]"
+            class="w-8 h-8 hover:scale-110 transition ease-in-out duration-300 cursor-pointer hover:text-custom-accent-green"
+            @click="projectStore.viewActive = 'TABLE'"
           />
         </div>
       </div>
     </div>
 
     <!-- FILTER -->
-    <div class="hidden lg:flex mt-6">
-      <ul class="flex space-x-4">
-        <li v-for="filter in filterList" :key="filter.id" class="hover:scale-105 transition ease-in-out duration-300">
+    <div class="sm:flex hidden mt-6 transition-transform duration-300">
+      <ul class="flex space-x-4 items-center">
+        <li
+          v-for="filter in projectStore.filterList"
+          :key="filter.id"
+          class="hover:scale-105 transition ease-in-out duration-300"
+        >
           <span
-            :class="[filter.id == filterActive ? 'bg-custom-accent-green text-white font-medium' : 'bg-green-100  text-gray-500  ']"
+            :class="[
+              filter.id == projectStore.filterActive.id
+                ? 'bg-custom-accent-green text-white font-medium'
+                : 'bg-green-100  text-gray-500  ',
+            ]"
             class="rounded-lg py-2 px-3 cursor-pointer shadow"
-            @click="filterActive = filter.id"
+            @click="projectStore.filterActive = filter"
           >
             {{ filter.name }}
           </span>
         </li>
+        <li class="hover:scale-105 transition ease-in-out duration-300">
+          <span
+            class="rounded-lg py-2 px-3 cursor-pointer shadow bg-green-100 text-gray-500 flex items-center"
+          >
+            <PlusIcon class="w-4 h-4 mr-2" /> <span>New</span>
+          </span>
+        </li>
       </ul>
     </div>
-    <template v-if="projectStore.isLoading" class="flex justify-center">
-      <atom-spinner :animation-duration="1000" :size="60" :color="'#ff1d5e'" />
-    </template>
-    <template v-else>
-      <TransitionGroup tag="div" name="fade" class="container mt-12 grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-4 max-w-full">
-        <div v-for="project in sortedArray" :key="project.id">
-          <CardProject :data="project" />
-        </div>
-      </TransitionGroup>
-    </template>
+    <Transition
+      tag="template"
+      name="slide-up"
+      :duration="{ enter: 500, leave: 800 }"
+    >
+      <div
+        v-if="projectStore.isLoading"
+        class="flex flex-col space-y-16 justify-center items-center flex-wrap w-full h-96 z-20 absolute w-1/2 h-1/2 m-auto left-0 right-0 top-0 bottom-0"
+      >
+        <breeding-rhombus-spinner
+          :animation-duration="2000"
+          :size="100"
+          color="#2EB26D"
+        />
+        <span class="font-medium text-xl text-gray-500"> Load Data ... </span>
+      </div>
+      <div v-else>
+        <Transition name="slide-up" :duration="{ enter: 500, leave: 100 }">
+          <div v-if="projectStore.viewActive == 'GRID'">
+            <GridViewWorkspace />
+          </div>
+          <div v-else-if="projectStore.viewActive == 'TABLE'">
+            <TableViewWorkspace />
+          </div>
+        </Transition>
+      </div>
+    </Transition>
+
+    <Transition tag="template" name="slide-up"> </Transition>
+    <!-- 
+    <SimpleButton
+      v-if="!projectStore.isLoading == true"
+      class="duration-300 transition hover:-translate-y-2 place-self-center mb-12"
+    >
+      Load More
+    </SimpleButton> -->
   </div>
 </template>
 
 <script setup>
-import { AtomSpinner } from 'epic-spinners'
+import { BreedingRhombusSpinner } from 'epic-spinners'
 import { computed, ref, onMounted } from 'vue'
-import { Squares2X2Icon, Bars3Icon, BarsArrowUpIcon, BarsArrowDownIcon, MagnifyingGlassIcon } from '@heroicons/vue/24/outline'
+import {
+  PlusIcon,
+  Squares2X2Icon,
+  Bars3Icon,
+  BarsArrowUpIcon,
+  BarsArrowDownIcon,
+  TableCellsIcon,
+} from '@heroicons/vue/24/outline'
 import { useProjectStore } from '../../stores/project'
-import CardProject from '../../components/CardProject.vue'
 
-const isDesc = ref(true)
-const isGrid = ref(true)
-const searchValue = ref('')
-const filterActive = ref(0)
+import SimpleButton from '../../components/button/SimpleButton.vue'
+import FilterDropdown from '../../components/workspace/FilterDropdown.vue'
+import GridViewWorkspace from '../../components/workspace/GridView.vue'
+import TableViewWorkspace from '../../components/workspace/TableView.vue'
+import SearchBar from '../../components/workspace/SearchBar.vue'
+import { toast } from 'vue3-toastify'
 
 const projectStore = useProjectStore()
 
-const sortedArray = computed(() => {
-  let tempData = projectStore.dataProject
-
-  // Process search input
-  if (searchValue.value != '' && searchValue.value) {
-    tempData = tempData.filter((item) => {
-      return item.title.toUpperCase().includes(searchValue.value.toUpperCase())
-    })
+projectStore.$subscribe((mutation, state) => {
+  if (mutation.events.key == 'viewActive') {
+    toast(`${projectStore.viewActive.toUpperCase()} VIEW MODE`, {
+      type: 'info',
+      transition: toast.TRANSITIONS.SLIDE,
+      theme: 'dark',
+      hideProgressBar: true,
+      position: toast.POSITION.BOTTOM_CENTER,
+      autoClose: 500,
+    }) // ToastOptions
   }
-
-  // Filter out by cooking time
-  if (filterActive.value > 0) {
-    tempData = tempData.filter((item) => {
-      return item.status == filterList[filterActive.value].name
-    })
-  } else {
-    return tempData
-  }
-
-  // Show sorted array in descending or ascending order
-  if (isDesc.value) {
-    tempData.reverse()
-  }
-
-  return tempData
 })
-
 onMounted(() => {
   projectStore.getData()
-  console.info(projectStore.dataProject)
 })
-
-const filterList = [
-  {
-    id: 0,
-    name: 'All Projects',
-  },
-  {
-    id: 1,
-    name: 'Ongoing',
-  },
-  {
-    id: 2,
-    name: 'Completed',
-  },
-  {
-    id: 3,
-    name: 'Draft',
-  },
-]
 </script>
 
 <style>
-.container {
-  position: relative;
-  padding: 0;
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.5s ease-out;
 }
 
-.item {
-  width: 100%;
-  height: 30px;
-  background-color: #f3f3f3;
-  border: 1px solid #666;
-  box-sizing: border-box;
-}
-
-/* 1. declare transition */
-.fade-move,
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-/* 2. declare enter from and leave to state */
-.fade-enter-from,
-.fade-leave-to {
+.slide-up-enter-from {
   opacity: 0;
-  transform: scaleY(0.01) translate(30px, 0);
+  transform: translateY(30px);
 }
 
-/* 3. ensure leaving items are taken out of layout flow so that moving
-      animations can be calculated correctly. */
-.fade-leave-active {
-  position: absolute;
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
 }
 </style>

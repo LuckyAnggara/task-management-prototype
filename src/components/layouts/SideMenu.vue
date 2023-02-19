@@ -1,5 +1,7 @@
 <template>
-  <aside class="fixed top-0 left-0 z-40 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0 shadow">
+  <aside
+    class="fixed top-0 left-0 z-40 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0 shadow"
+  >
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-200 flex flex-col">
       <!-- LOGO -->
       <div class="py-6">
@@ -13,7 +15,12 @@
       <div class="">
         <ul class="space-y-3">
           <li v-for="menu in listMenuTop" :key="menu.id">
-            <MenuButton :menu-id="menu.id" :active-id="currentMenu" @click="currentMenu = menu.id" :nav-name="menu.to">
+            <MenuButton
+              :menu-id="menu.id"
+              :active-id="currentMenu"
+              @click="currentMenu = menu.id"
+              :nav-name="menu.to"
+            >
               <template v-slot:icon>
                 <component :is="menu.icon" class="h-6 w-6"></component>
               </template>
@@ -33,8 +40,18 @@
       <div class="mt-3">
         <ul class="space-y-2">
           <li>
-            <a href="#" class="flex items-center p-2 text-base font-normal text-blue-500 rounded-lg hover:text-custom-accent-green">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <a
+              href="#"
+              class="flex items-center p-2 text-base font-normal text-blue-500 rounded-lg hover:text-custom-accent-green"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -47,8 +64,18 @@
           </li>
 
           <li>
-            <a href="#" class="flex items-center p-2 text-base font-normal text-red-500 rounded-lg hover:text-custom-accent-green">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <a
+              href="#"
+              class="flex items-center p-2 text-base font-normal text-red-500 rounded-lg hover:text-custom-accent-green"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -56,7 +83,9 @@
                 />
               </svg>
 
-              <span class="ml-3 text-gray-500 truncate">Kegiatan Deklarasi</span>
+              <span class="ml-3 text-gray-500 truncate"
+                >Kegiatan Deklarasi</span
+              >
             </a>
           </li>
         </ul>
@@ -68,7 +97,11 @@
 
         <ul class="space-y-2">
           <li v-for="menu in listMenuBottom" :key="menu.id">
-            <MenuButton :menu-id="menu.id" :active-id="currentMenu" @click="currentMenu = menu.id">
+            <MenuButton
+              :menu-id="menu.id"
+              :active-id="currentMenu"
+              @click="currentMenu = menu.id"
+            >
               <template v-slot:icon>
                 <component :is="menu.icon" class="h-6 w-6"></component>
               </template>
@@ -82,7 +115,14 @@
 </template>
 
 <script>
-import { RectangleGroupIcon, FolderIcon, ClipboardIcon, InboxIcon, UserIcon, ArrowLeftOnRectangleIcon } from '@heroicons/vue/24/outline'
+import {
+  RectangleGroupIcon,
+  FolderIcon,
+  ClipboardIcon,
+  InboxIcon,
+  UserIcon,
+  ArrowLeftOnRectangleIcon,
+} from '@heroicons/vue/24/outline'
 import { reactive, ref } from 'vue'
 import InfoSideBar from './InfoSideBar.vue'
 import MenuButton from '../button/MenuButton.vue'

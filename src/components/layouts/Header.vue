@@ -1,6 +1,10 @@
 <template>
-  <nav class="px-4 sm:px-4 py-4 fixed w-full z-20 top-0 bg-white">
-    <div class="sm:ml-64 py-3 flex flex-wrap justify-between">
+  <nav
+    class="sm:px-8 py-4 fixed w-full z-20 top-0 bg-white px-8 shadow sm:shadow-none"
+  >
+    <div
+      class="sm:ml-64 py-3 flex flex-wrap justify-between border-b-gray-500 border-b-2"
+    >
       <div class="py-3 flex items-center">
         <span class="text-3xl font-medium text-gray-600">{{ title }}</span>
       </div>
@@ -10,7 +14,7 @@
         <UserAvatar class="" />
       </div>
     </div>
-    <hr class="sm:ml-64 solid border-gray-500" />
+    <!-- <hr class="sm:ml-64 solid border-gray-500" /> -->
   </nav>
 </template>
 <!-- 
