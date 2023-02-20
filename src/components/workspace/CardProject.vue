@@ -7,9 +7,7 @@
       {{ data?.title }}
     </span>
 
-    <span
-      class="font-normal text-md text-gray-500 text-justify mt-3 break-words text-ellipsis overflow-hidden h-48"
-    >
+    <span class="font-normal text-md text-gray-500 text-justify mt-3 break-words text-ellipsis overflow-hidden h-48">
       {{ data?.description.substring(0, 180) }}
       {{ data?.description.length > 160 ? '...' : '' }}
     </span>
@@ -21,25 +19,14 @@
       </div>
 
       <span class="font-medium text-md justify-self-end">{{
-        data?.status == 'Draft'
-          ? 'N/A'
-          : data?.status == 'Completed'
-          ? '-'
-          : this.$moment(data?.deadline_date).fromNow(true)
+        data?.status == 'Draft' ? 'N/A' : data?.status == 'Completed' ? '-' : this.$moment(data?.deadline_date).fromNow(true)
       }}</span>
     </div>
 
     <div class="flex justify-between text-gray-500 items-center">
       <ul class="flex -space-x-1">
-        <li
-          v-for="member in data?.member.length > 3
-            ? data?.member.slice(0, 3)
-            : data?.member"
-          :key="member.no"
-        >
-          <Avatar
-            :source="'https://png.pngtree.com/png-clipart/20190921/original/pngtree-user-avatar-boy-png-image_4693645.jpg'"
-          />
+        <li v-for="member in data?.member.length > 3 ? data?.member.slice(0, 3) : data?.member" :key="member.no">
+          <Avatar :source="'https://png.pngtree.com/png-clipart/20190921/original/pngtree-user-avatar-boy-png-image_4693645.jpg'" />
         </li>
         <li v-if="number > 3">
           <div
@@ -51,11 +38,7 @@
       </ul>
       <span
         :class="[
-          data?.status == 'Completed'
-            ? 'bg-custom-accent-green text-white'
-            : data?.status == 'Ongoing'
-            ? 'bg-custom-accent-orange text-white'
-            : 'bg-green-100',
+          data?.status == 'Completed' ? 'bg-custom-accent-green text-white' : data?.status == 'Ongoing' ? 'bg-custom-accent-orange text-white' : 'bg-green-100',
         ]"
         class="rounded-md px-2 py-1"
         >{{ data?.status }}</span

@@ -45,9 +45,7 @@ export const useProjectStore = defineStore('project', {
       // Process search input
       if (state.searchValue != '' && state.searchValue) {
         tempData = tempData.filter((item) => {
-          return item.title
-            .toUpperCase()
-            .includes(state.searchValue.toUpperCase())
+          return item.title.toUpperCase().includes(state.searchValue.toUpperCase())
         })
       }
 
@@ -72,6 +70,14 @@ export const useProjectStore = defineStore('project', {
 
       return tempData
     },
+    filterItem: (state) => {
+      let tempData = state.data
+
+      return (filter) =>
+        tempData.filter((item) => {
+          return item.status == filter
+        })
+    },
   },
   actions: {
     async getData() {
@@ -83,6 +89,9 @@ export const useProjectStore = defineStore('project', {
       }, 200)
     },
 
-    filterData() {},
+    changeStatus(id, status) {
+      let index = this.data.findIndex((e) => e._id == id)
+      this.data[index].status = status
+    },
   },
 })

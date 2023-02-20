@@ -22,13 +22,21 @@ export const projects = [
         id: 2,
         name: 'Lynn Chang',
       },
+      {
+        id: 3,
+        name: 'Lynn Chang',
+      },
+      {
+        id: 4,
+        name: 'Lynn Chang',
+      },
     ],
   },
   {
     _id: '63e5f35690ccb858d28a28b9',
     index: 1,
     guid: '18bfeaa7-61ac-47ad-9ee6-a494324b0078',
-    status: 'Draft',
+    status: 'Ongoing',
     title: 'esse officia',
     description:
       'Aliquip labore nisi aliquip cillum dolor commodo duis cillum fugiat minim nulla. Id cillum commodo incididunt aute fugiat. Incididunt do culpa occaecat anim consequat aliqua ad amet aliqua aliqua. Anim nisi esse id enim reprehenderit mollit in non ex commodo reprehenderit Lorem aute. Labore eu eu cupidatat tempor voluptate Lorem nulla elit culpa irure exercitation ipsum id. Aliqua proident qui id Lorem consectetur nisi aute anim cupidatat culpa adipisicing sint proident. Velit in proident ipsum exercitation minim laboris non in dolore.\r\n',
@@ -880,8 +888,7 @@ export const projects = [
     guid: 'dd5e49ef-8a0f-403f-aed9-af8a2adbd54f',
     status: 'Ongoing',
     title: 'aliquip cillum',
-    description:
-      'Exercitation ea id nisi irure do. Et sint qui ex sint amet deserunt cillum deserunt. Ullamco aliquip anim irure eu.\r\n',
+    description: 'Exercitation ea id nisi irure do. Et sint qui ex sint amet deserunt cillum deserunt. Ullamco aliquip anim irure eu.\r\n',
     start_date: '2021-10-23T11:29:30',
     deadline_date: '2017-07-09T12:35:54',
     member: [
