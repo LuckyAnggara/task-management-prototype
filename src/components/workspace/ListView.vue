@@ -1,24 +1,36 @@
 <template>
-  <div class="bg-gray-100 rounded-lg w-full flex flex-row space-x-6 h-full mt-6 py-6 px-12 overflow-y-auto">
-    <div class="w-full h-full flex flex-col px-4" v-for="filter in filterList" :key="filter.id">
+  <div
+    class="bg-gray-100 rounded-lg w-full flex flex-row sm:space-x-4 space-x-1 max-h-screen mt-6 sm:py-6 sm:px-6 py-2 px-2 overflow-scroll"
+  >
+    <div
+      class="w-full h-full flex flex-col px-4"
+      v-for="filter in filterList"
+      :key="filter.id"
+    >
       <!-- Title -->
-      <div class="w-full h-16 bg-white rounded-md shadow-sm text-center items-center flex justify-between px-8 mb-6">
+      <div
+        class="w-full h-16 bg-white rounded-md shadow-sm text-center items-center flex justify-between px-8 mb-6"
+      >
         <div class="flex flex-row">
           <span class="text-gray-500 font-bold text-lg">{{ filter.name }}</span>
-          <span class="ml-2 bg-gray-100 text-custom-accent-green text-sm font-medium flex items-center justify-center w-8 h-8 rounded-full">{{
-            projectStore.filterItem(filter.name).length
-          }}</span>
+          <span
+            class="ml-2 bg-gray-100 text-custom-accent-green text-sm font-medium flex items-center justify-center w-8 h-8 rounded-full"
+            >{{ projectStore.filterItem(filter.name).length }}</span
+          >
         </div>
-        <EllipsisVerticalIcon class="h-7 w-7 font-medium text-gray-500 cursor-pointer" />
+        <EllipsisVerticalIcon
+          class="h-7 w-7 font-medium text-gray-500 cursor-pointer"
+        />
       </div>
       <!-- Content -->
+      <!-- <template v-if="projectStore.filterItem(filter.name).length > 0"> -->
       <draggable
         class="list-group flex flex-col space-y-4"
         :group="filter.name"
         :itemKey="filter.name"
         :list="projectStore.filterItem(filter.name)"
         v-bind="dragOptions"
-        :move="checkMove"
+        @change="checkMove"
         @start="isDragging = true"
         @end="isDragging = false"
       >
@@ -37,8 +49,12 @@
               />
             </a>
             <div class="flex justify-between items-center mb-5">
-              <span class="text-gray-700 font-semibold text-2xl">{{ element.title }}</span>
-              <EllipsisHorizontalIcon class="h-7 w-7 font-bold text-xl text-gray-700" />
+              <span class="text-gray-700 font-semibold text-2xl">{{
+                element.title
+              }}</span>
+              <EllipsisHorizontalIcon
+                class="h-7 w-7 font-bold text-xl text-gray-700"
+              />
             </div>
             <span class="text-gray-500 font-normal text-md">
               {{ element.description.substring(0, 120) }}
@@ -46,16 +62,29 @@
             </span>
             <div class="flex flex-row justify-between items-center mt-4">
               <div class="flex flex-row justify-center items-center space-x-2">
-                <div class="flex flex-row items-center space-x-1 justify-center">
-                  <PaperClipIcon class="w-5 h-5 text-gray-500" /> <span class="text-gray-500 text-sm">3</span>
+                <div
+                  class="flex flex-row items-center space-x-1 justify-center"
+                >
+                  <PaperClipIcon class="w-5 h-5 text-gray-500" />
+                  <span class="text-gray-500 text-sm">3</span>
                 </div>
-                <div class="flex flex-row items-center space-x-1 justify-center">
-                  <ChatBubbleLeftEllipsisIcon class="w-5 h-5 text-gray-500" /> <span class="text-gray-500 text-sm">3</span>
+                <div
+                  class="flex flex-row items-center space-x-1 justify-center"
+                >
+                  <ChatBubbleLeftEllipsisIcon class="w-5 h-5 text-gray-500" />
+                  <span class="text-gray-500 text-sm">3</span>
                 </div>
               </div>
               <ul class="flex -space-x-2">
-                <li v-for="member in element.member.length > 3 ? element.member.slice(0, 3) : element.member" :key="member.no">
-                  <Avatar :source="'https://png.pngtree.com/png-clipart/20190921/original/pngtree-user-avatar-boy-png-image_4693645.jpg'" />
+                <li
+                  v-for="member in element.member.length > 3
+                    ? element.member.slice(0, 3)
+                    : element.member"
+                  :key="member.no"
+                >
+                  <Avatar
+                    :source="'https://png.pngtree.com/png-clipart/20190921/original/pngtree-user-avatar-boy-png-image_4693645.jpg'"
+                  />
                 </li>
                 <li v-if="element.member.length > 3">
                   <div
@@ -69,6 +98,18 @@
           </div>
         </template>
       </draggable>
+      <!-- </template> -->
+
+      <!-- <template v-else>
+        <div
+          class="w-full h-60 bg-gray-100 rounded-md px-8 py-6 border-4 border-gray-200 border-dotted flex items-center justify-center"
+        >
+          <span class="text-gray-500 font-medium text-md text-center"
+            >No Content</span
+          >
+        </div>
+      </template> -->
+
       <!-- <div
           v-for="project in projectStore.filterItem(filter.name)"
           :key="project._id"
@@ -120,13 +161,21 @@
 import draggable from 'vuedraggable'
 import { useProjectStore } from '../../stores/project'
 import SearchBar from './SearchBar.vue'
-import { EllipsisVerticalIcon, EllipsisHorizontalIcon, ChatBubbleLeftEllipsisIcon, PaperClipIcon } from '@heroicons/vue/24/outline'
+import {
+  EllipsisVerticalIcon,
+  EllipsisHorizontalIcon,
+  ChatBubbleLeftEllipsisIcon,
+  PaperClipIcon,
+} from '@heroicons/vue/24/outline'
 import Avatar from '../Avatar.vue'
 import { ref, computed } from 'vue'
 
 function checkMove(evt) {
-  projectStore.changeStatus(evt.draggedContext.element._id, evt.relatedContext.element.status)
-  console.info(evt.draggedContext.element._id)
+  // projectStore.changeStatus(
+  //   evt.draggedContext.element._id,
+  //   evt.relatedContext.element.status
+  // )
+  console.info(evt)
 }
 
 const isDragging = ref(false)
