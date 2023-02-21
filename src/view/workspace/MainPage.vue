@@ -67,6 +67,7 @@
         </ul>
       </div>
     </Transition>
+    <!-- CONTENT -->
     <Transition tag="template" name="slide-up" :duration="{ enter: 800, leave: 200 }">
       <div
         v-if="projectStore.isLoading"
