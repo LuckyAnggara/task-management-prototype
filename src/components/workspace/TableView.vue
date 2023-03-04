@@ -22,6 +22,7 @@
                     Created at
                   </th>
                   <th scope="col" class="py-4 px-2">Progress</th>
+                  <th scope="col" class="py-4 px-2">Task</th>
                   <th scope="col" class="py-4 px-2">Owner</th>
                   <th scope="col" class="py-4 px-2">Deadline</th>
                 </tr>
@@ -30,36 +31,43 @@
                 <TransitionGroup name="list">
                   <tr
                     v-for="project in projectStore.sortedArray"
-                    :key="project._id"
+                    :key="project.id"
                     :class="[
                       project.status == 'Completed'
                         ? 'strikeout bg-green-100'
                         : '',
                     ]"
-                    class="border-b transition duration-300 ease-in-out hover:bg-gray-100 cursor-pointer hover:-translate-y-1 hover:translate-x-2"
+                    class="border-b transition duration-300 ease-linear hover:bg-gray-100 cursor-pointer hover:-translate-y-1 hover:translate-x-1"
                   >
                     <td class="font-medium">
                       <input
-                        :id="'checkbox-' + project._id"
                         type="checkbox"
                         :value="project.status"
                         v-model="project.status"
                         :true-value="'Completed'"
                         :false-value="'Ongoing'"
-                        class="w-4 h-4 rounded focus:ring-custom-accent-green accent-pink-500"
+                        class="w-4 h-4 rounded focus:ring-custom-accent-green accent-pink-500 cursor-pointer"
                       />
-                      <label
-                        :for="'checkbox-' + project._id"
-                        class="ml-4 font-medium"
-                      >
+                      <TitleTableEdit :data="project" />
+                      <!-- <label class="ml-4 font-medium cursor-text">
                         {{ project.title }}</label
-                      >
+                      > -->
+                      <!-- <input class="ml-2 w-5/6" v-model="project.title" /> -->
                     </td>
                     <td class="py-4">
                       {{ moment(project.start_date).format('DD MMMM YYYY') }}
                     </td>
                     <td class="py-4">
                       {{ project.status }}
+                    </td>
+                    <td class="py-4">
+                      <!-- Progress Bar -->
+                      <div class="w-full bg-green-200 rounded-md h-2.5">
+                        <div
+                          class="bg-green-600 h-2.5 rounded-md"
+                          style="width: 67.7%"
+                        ></div>
+                      </div>
                     </td>
                     <td class="flex items-center py-4">
                       <Avatar
@@ -74,23 +82,7 @@
                 </TransitionGroup>
               </tbody>
             </table>
-            <div class="mt-8 mb-12">
-              <!-- Previous Button -->
-              <a
-                href="#"
-                class="inline-flex items-center px-4 py-2 font-medium text-white bg-green-500 border rounded-lg transition duration-300 ease-in-out hover:scale-110"
-              >
-                Previous
-              </a>
-
-              <!-- Next Button -->
-              <a
-                href="#"
-                class="inline-flex items-center px-4 py-2 ml-3 font-medium text-white bg-green-500 border rounded-lg transition duration-300 ease-in-out hover:scale-110"
-              >
-                Next
-              </a>
-            </div>
+            <Paggination />
           </div>
         </div>
       </div>
@@ -103,7 +95,9 @@ import { useProjectStore } from '../../stores/project'
 import Avatar from '../Avatar.vue'
 import moment from 'moment'
 import ShowDataDropdown from './ShowDataDropdown.vue'
+import TitleTableEdit from './TitleTableEdit.vue'
 import SearchBar from './SearchBar.vue'
+import Paggination from './Paggination.vue'
 
 const projectStore = useProjectStore()
 </script>

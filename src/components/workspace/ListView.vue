@@ -1,28 +1,48 @@
 <template>
-  <div class="bg-gray-100 rounded-lg sm:w-full flex flex-row sm:space-x-4 space-x-1 mt-6 sm:py-6 sm:px-4 py-2 px-2 h-fit w-fit mb-9">
-    <div class="sm:w-96 w-full h-full flex flex-col px-4" v-for="filter in projectStore.example2" :key="filter.title">
+  <div
+    class="bg-gray-100 rounded-lg sm:w-full flex flex-row sm:space-x-4 space-x-1 mt-6 sm:py-6 sm:px-4 py-2 px-2 h-fit w-fit mb-9"
+  >
+    <div
+      class="sm:w-96 w-full h-full flex flex-col px-4"
+      v-for="filter in projectStore.listViewData"
+      :key="filter.title"
+    >
       <!-- Title -->
-      <div class="w-full h-16 bg-white rounded-sm shadow-sm text-center items-center flex justify-between px-6 mb-6">
+      <div
+        class="w-full h-16 bg-white rounded-sm shadow-sm text-center items-center flex justify-between px-6 mb-6"
+      >
         <div class="flex flex-row">
-          <span class="text-gray-500 font-bold text-lg">{{ filter.title }}</span>
-          <span class="ml-2 bg-gray-100 text-custom-accent-green text-sm font-medium flex items-center justify-center w-8 h-8 rounded-full">{{
-            filter.projects.length
+          <span class="text-gray-500 font-bold text-lg">{{
+            filter.title
           }}</span>
+          <span
+            class="ml-2 bg-gray-100 text-custom-accent-green text-sm font-medium flex items-center justify-center w-8 h-8 rounded-full"
+            >{{ filter.projects.length }}</span
+          >
         </div>
-        <EllipsisVerticalIcon class="h-7 w-7 font-medium text-gray-500 cursor-pointer" />
+        <EllipsisVerticalIcon
+          class="h-7 w-7 font-medium text-gray-500 cursor-pointer"
+        />
       </div>
       <!-- Content -->
       <!-- <template v-if="projectStore.filterItem(filter.name).length > 0"> -->
       <draggable
+        :id="filter.title"
         class="list-group flex flex-col space-y-4"
         :list="filter.projects"
-        :animation="200"
+        :animation="500"
+        tag="div"
         ghost-class="ghost-card"
         group="tasks"
-        :itemKey="filter.title"
+        :itemKey="`aa`"
+        @end="moveData"
       >
         <template #item="{ element }">
-          <ListCardProject :data="element" :status="filter.title" />
+          <ListCardProject
+            @drag="projectStore.draggableComponentData.id = element.id"
+            :data="element"
+            :status="filter.title"
+          />
         </template>
       </draggable>
       <!-- </template> -->
@@ -39,7 +59,7 @@
 
       <!-- <div
           v-for="project in projectStore.filterItem(filter.name)"
-          :key="project._id"
+          :key="project.id"
           class="w-full max-h-full h-54 bg-white rounded-md shadow-sm justify-between px-8 py-6 hover:translate-x-4 transform duration-500 ease-in-out cursor-pointer hover:bg-gray-50"
         >
           <a v-if="project.title == 'esse officia'" href="#">
@@ -93,66 +113,20 @@ import SearchBar from './SearchBar.vue'
 import draggable from 'vuedraggable'
 
 import ListCardProject from './ListCardProject.vue'
-
-function checkMove(evt) {
-  // projectStore.changeStatus(
-  //   evt.draggedContext.element._id,
-  //   evt.relatedContext.element.status
-  // )
-  console.info(evt)
-}
-
-const isDragging = ref(false)
-const dragOptions = {
-  animation: 500,
-  group: 'description',
-  disabled: false,
-  ghostClass: 'ghost',
-}
-
-const example = computed({
-  get() {
-    return [
-      {
-        title: 'Idea',
-        projects: data.filter((item) => {
-          return item.status == 'Idea'
-        }),
-      },
-      {
-        title: 'Ongoing',
-        projects: data.filter((item) => {
-          return item.status == 'Ongoing'
-        }),
-      },
-      {
-        title: 'In Review',
-        projects: data.filter((item) => {
-          return item.status == 'In Review'
-        }),
-      },
-      {
-        title: 'Completed',
-        projects: data.filter((item) => {
-          return item.status == 'Completed'
-        }),
-      },
-    ]
-  },
-  // setter
-  set(newValue) {
-    console.info(newValue)
-  },
-})
-
 const projectStore = useProjectStore()
+
+function moveData(evt) {
+  projectStore.draggableComponentData.fromId = evt.from.id
+  projectStore.draggableComponentData.toId = evt.to.id
+  projectStore.changeStatusDraggableData()
+}
 
 const data = projectStore.data
 
 const filterList = [
   {
     id: 1,
-    name: 'To Do',
+    name: 'Idea',
   },
   {
     id: 2,

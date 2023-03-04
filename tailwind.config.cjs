@@ -20,9 +20,14 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-15deg)' },
           '50%': { transform: 'rotate(15deg)' },
         },
+        loop: {
+          '0% 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(2rem)' },
+        },
       },
       animation: {
         wiggle: 'wiggle 0.8s ease-in-out infinite',
+        loop: '2s ease-in-out infinite',
       },
     },
   },

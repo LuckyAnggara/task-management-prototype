@@ -4,7 +4,7 @@
     name="list"
     class="container my-12 grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-4 max-w-full"
   >
-    <div v-for="project in projectStore.sortedArray" :key="project._id">
+    <div v-for="project in projectStore.sortedArray" :key="project.id">
       <CardProject :data="project" />
     </div>
   </TransitionGroup>

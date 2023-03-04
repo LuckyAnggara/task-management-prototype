@@ -1,6 +1,6 @@
 export const projects = [
   {
-    _id: '63e5f35639be52642472614d',
+    id: '63e5f35639be52642472614d',
     index: 0,
     guid: '0fa06a50-b141-49bd-875d-fe84493a154b',
     status: 'Ongoing',
@@ -35,7 +35,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f35690ccb858d28a28b9',
+    id: '63e5f35690ccb858d28a28b9',
     index: 1,
     guid: '18bfeaa7-61ac-47ad-9ee6-a494324b0078',
     status: 'Ongoing',
@@ -60,7 +60,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f3562f2529b3e9ef668d',
+    id: '63e5f3562f2529b3e9ef668d',
     index: 2,
     guid: '84fcbde0-f51e-4b6c-944b-6d646940062c',
     status: 'Completed',
@@ -85,7 +85,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f35654461954cfce0ff2',
+    id: '63e5f35654461954cfce0ff2',
     index: 3,
     guid: '978c48aa-1d0e-42c0-8820-21fe52ee4976',
     status: 'Completed',
@@ -110,10 +110,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356b17dc8c9f9bb3184',
+    id: '63e5f356b17dc8c9f9bb3184',
     index: 4,
     guid: '02b40efe-ac02-45b8-8b42-cb71fd97c1a3',
-    status: 'Draft',
+    status: 'Idea',
     title: 'nulla veniam',
     description:
       'Laboris pariatur Lorem veniam do fugiat sunt nisi minim aute. Non qui qui labore mollit commodo quis non culpa ut do fugiat occaecat aliqua. Mollit sit et labore consequat officia dolor. Sunt reprehenderit do Lorem id veniam ex aliqua. Anim magna sint ipsum velit tempor irure do aliqua voluptate sint velit voluptate anim. Nostrud ad amet exercitation labore non consectetur deserunt veniam commodo enim excepteur Lorem. Magna tempor velit mollit nisi et enim.\r\n',
@@ -135,7 +135,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356d2c7ae8f5197b284',
+    id: '63e5f356d2c7ae8f5197b284',
     index: 5,
     guid: '101cdc73-001c-49f1-b4f9-a4017defe0f1',
     status: 'Ongoing',
@@ -160,7 +160,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f35699db4649b4e01ed3',
+    id: '63e5f35699db4649b4e01ed3',
     index: 6,
     guid: '6597690f-6618-4b97-af69-c00e46291063',
     status: 'Completed',
@@ -185,10 +185,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f3563bbed99acc5cb1c4',
+    id: '63e5f3563bbed99acc5cb1c4',
     index: 7,
     guid: 'c2ca32fe-d40d-4e77-903e-0f96591d14b6',
-    status: 'Draft',
+    status: 'Idea',
     title: 'mollit deserunt',
     description:
       'Dolore non nulla amet eiusmod aliquip ea aute et pariatur exercitation anim consequat sint laboris. Ea quis ullamco irure nostrud minim incididunt. Nisi id laboris ad incididunt amet elit cupidatat fugiat fugiat.\r\n',
@@ -210,10 +210,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f3563d12e952bd13b785',
+    id: '63e5f3563d12e952bd13b785',
     index: 8,
     guid: '06a849e8-82e0-4507-bec5-a8dc8b2bf77d',
-    status: 'Draft',
+    status: 'Idea',
     title: 'ipsum excepteur',
     description:
       'Dolore velit nostrud deserunt ex fugiat quis voluptate officia cupidatat. Ipsum est incididunt tempor adipisicing tempor fugiat aute ad id ea adipisicing id in commodo. Dolor sit irure ullamco excepteur sit esse non adipisicing sint veniam.\r\n',
@@ -235,7 +235,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356ebc74401851985c4',
+    id: '63e5f356ebc74401851985c4',
     index: 9,
     guid: '0960140b-d75d-4505-995c-2967c716ab0d',
     status: 'Completed',
@@ -260,10 +260,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356a6715d483ba4ba0b',
+    id: '63e5f356a6715d483ba4ba0b',
     index: 10,
     guid: '9e133df3-1b06-40ee-8352-7ea5b485abcd',
-    status: 'Draft',
+    status: 'Idea',
     title: 'nisi ea',
     description:
       'Nisi eu voluptate consequat eiusmod pariatur proident nulla excepteur dolore dolore in in et. Consectetur sit deserunt ea laboris magna velit consectetur incididunt. Nulla anim sunt nisi duis.\r\n',
@@ -285,7 +285,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356b83cc22458016c28',
+    id: '63e5f356b83cc22458016c28',
     index: 11,
     guid: '89945cbd-7446-4286-b925-924e881948af',
     status: 'Completed',
@@ -310,7 +310,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356eec4b5ec4fe5e557',
+    id: '63e5f356eec4b5ec4fe5e557',
     index: 12,
     guid: 'f19f6e9c-804a-4111-a49e-0cceae52069c',
     status: 'Completed',
@@ -335,7 +335,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356b8c78118d34a0b7f',
+    id: '63e5f356b8c78118d34a0b7f',
     index: 13,
     guid: 'cf06dcb9-927e-409a-b13b-dfd64b37be45',
     status: 'Ongoing',
@@ -360,7 +360,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356c0752d4d671430f7',
+    id: '63e5f356c0752d4d671430f7',
     index: 14,
     guid: '86e419f2-f8cf-4d0b-aa97-005d3ba2747a',
     status: 'Completed',
@@ -385,10 +385,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356db74bd6867408c60',
+    id: '63e5f356db74bd6867408c60',
     index: 15,
     guid: 'cd8bbddd-4a02-424c-ae4f-82df8b208dba',
-    status: 'Draft',
+    status: 'Idea',
     title: 'veniam amet',
     description:
       'Do excepteur amet cillum dolor laborum ea deserunt anim do in ea ut consectetur consectetur. Nisi occaecat aliqua commodo esse. Duis exercitation tempor sit esse quis pariatur consequat. Labore excepteur tempor non fugiat. Minim ea dolor fugiat laborum qui enim cupidatat.\r\n',
@@ -410,10 +410,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356adc33deac658f4e5',
+    id: '63e5f356adc33deac658f4e5',
     index: 16,
     guid: '68bde90b-05db-437c-b7ed-3d95c96489b8',
-    status: 'Draft',
+    status: 'Idea',
     title: 'pariatur sit',
     description:
       'Laboris Lorem enim amet culpa. Nisi duis eiusmod sit id mollit deserunt. Do minim consectetur ut duis nostrud nostrud velit magna ex ut commodo. Fugiat elit Lorem ea irure sit sint laborum. Aliquip sit pariatur nulla est laborum minim.\r\n',
@@ -435,7 +435,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f35675fe311bbc6edf5f',
+    id: '63e5f35675fe311bbc6edf5f',
     index: 17,
     guid: '9dffaeb0-e4f7-4ff1-87e4-9384e1b2b09b',
     status: 'Ongoing',
@@ -460,7 +460,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356f1fbd3d64e4bae99',
+    id: '63e5f356f1fbd3d64e4bae99',
     index: 18,
     guid: '3e315178-62f5-4ebd-b231-9c8301cb642b',
     status: 'Ongoing',
@@ -485,7 +485,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356b08eae232efe3f50',
+    id: '63e5f356b08eae232efe3f50',
     index: 19,
     guid: 'f15cba2b-9326-4b9f-9509-fa2909fac6c1',
     status: 'Completed',
@@ -510,10 +510,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356202a44d5c1dd13c6',
+    id: '63e5f356202a44d5c1dd13c6',
     index: 20,
     guid: '49e4d863-a9e0-45bd-ae12-f80a21a54dbc',
-    status: 'Draft',
+    status: 'Idea',
     title: 'sit dolor',
     description:
       'Velit fugiat adipisicing nostrud dolore Lorem ex veniam laborum ullamco. Ex tempor aliqua sit laboris cillum qui ullamco mollit laborum. Lorem cupidatat nostrud minim ad consectetur magna sint culpa nisi ullamco labore proident. Culpa fugiat aute aliqua deserunt minim deserunt laboris ex et aute aliquip do sunt.\r\n',
@@ -535,10 +535,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356e41481de3c4c1f50',
+    id: '63e5f356e41481de3c4c1f50',
     index: 21,
     guid: '919fa27c-2fbf-4741-9e82-6de19a3fe7c0',
-    status: 'Draft',
+    status: 'Idea',
     title: 'nostrud proident',
     description:
       'Non veniam velit id fugiat commodo occaecat deserunt aliquip incididunt. Lorem commodo adipisicing elit consequat anim sunt commodo voluptate consequat tempor id nulla. Excepteur eiusmod reprehenderit mollit ad velit exercitation eiusmod deserunt consectetur pariatur. Eu et consectetur aliquip sint duis excepteur ex velit labore. Voluptate occaecat dolor voluptate irure deserunt reprehenderit quis nulla. Commodo duis consectetur laboris proident nulla in eu. Tempor cillum quis non anim aute ullamco ea.\r\n',
@@ -560,10 +560,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f35669eaf5b99d91bf26',
+    id: '63e5f35669eaf5b99d91bf26',
     index: 22,
     guid: 'dd7d731a-3b5a-4d39-ba77-731734c0425e',
-    status: 'Draft',
+    status: 'Idea',
     title: 'labore proident',
     description:
       'Amet excepteur ipsum aliquip consectetur et anim deserunt veniam fugiat. Laborum deserunt ipsum eiusmod culpa deserunt reprehenderit id aliqua aliquip veniam veniam excepteur ullamco in. Magna dolore Lorem adipisicing culpa eu eiusmod in velit nisi anim occaecat voluptate. Adipisicing et quis ex dolore do pariatur. Exercitation aliqua mollit aliquip et aliqua adipisicing dolore sit est occaecat velit esse. Duis irure Lorem Lorem ut ad aliqua non in ea irure proident enim.\r\n',
@@ -585,7 +585,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f3561365d4f6eab33872',
+    id: '63e5f3561365d4f6eab33872',
     index: 23,
     guid: '4537d2a6-fd22-4cef-aaf2-91fcd53ef318',
     status: 'Completed',
@@ -610,7 +610,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f3563dad9be6c5279d82',
+    id: '63e5f3563dad9be6c5279d82',
     index: 24,
     guid: 'dbd76525-9de3-4263-98b5-a338967a0ff5',
     status: 'Ongoing',
@@ -635,10 +635,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f35618e44ac4272732d7',
+    id: '63e5f35618e44ac4272732d7',
     index: 25,
     guid: '067e9535-5a97-49b3-9de6-f53770546d25',
-    status: 'Draft',
+    status: 'Idea',
     title: 'ullamco cillum',
     description:
       'Anim et aliqua tempor cillum nostrud do minim culpa aliqua ut voluptate irure. Non esse ea cupidatat minim nostrud laboris enim ea magna do do laboris. Eiusmod nostrud nulla ipsum consequat qui nisi. Fugiat Lorem duis laboris consequat cillum occaecat ullamco sint aliquip. Veniam ex excepteur qui excepteur est voluptate minim. Aliqua minim consectetur id sunt occaecat adipisicing ad esse tempor labore id. Aliquip officia dolor est qui tempor reprehenderit ex ex laborum culpa eu est ipsum.\r\n',
@@ -660,10 +660,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356960a1f530306d6b4',
+    id: '63e5f356960a1f530306d6b4',
     index: 26,
     guid: 'bc74fc81-afa6-4fd7-b2f3-17c99120d9af',
-    status: 'Draft',
+    status: 'Idea',
     title: 'deserunt tempor',
     description:
       'Non ex excepteur minim consectetur adipisicing id pariatur aute culpa nisi nostrud nostrud anim amet. Consectetur et nisi laborum tempor id. Laboris et cupidatat cillum anim mollit commodo sunt incididunt consequat laboris. Mollit anim culpa labore aliquip elit nostrud ipsum commodo amet do consequat ullamco eu. Sint cupidatat sint consequat non dolor sint tempor ea dolore ea esse consectetur amet ut.\r\n',
@@ -685,10 +685,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f35624f97cacce103a90',
+    id: '63e5f35624f97cacce103a90',
     index: 27,
     guid: '0dc4ca29-33ce-4830-be9e-71de38c51eaf',
-    status: 'Draft',
+    status: 'Idea',
     title: 'ut anim',
     description:
       'Deserunt mollit aliqua in reprehenderit aliqua Lorem adipisicing exercitation. Consectetur mollit pariatur pariatur minim proident do. Nostrud reprehenderit labore dolore qui. Sunt sit fugiat dolor aliqua aliqua aliquip ea. Pariatur aute aliquip ad pariatur esse consectetur ad quis.\r\n',
@@ -710,7 +710,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356a341a622c82ba3cc',
+    id: '63e5f356a341a622c82ba3cc',
     index: 28,
     guid: '76a0839b-b80a-41b6-a433-30e7d44a3c71',
     status: 'Ongoing',
@@ -735,7 +735,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356b791a2cf3532d607',
+    id: '63e5f356b791a2cf3532d607',
     index: 29,
     guid: 'c4ebc6ac-5eba-4c59-898e-942d9e87e303',
     status: 'Completed',
@@ -760,7 +760,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f3567842a2344d1c5d96',
+    id: '63e5f3567842a2344d1c5d96',
     index: 30,
     guid: 'a2cfe421-f696-4cdb-975a-142e8bb18a63',
     status: 'Completed',
@@ -785,10 +785,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f3566b25e334993621e8',
+    id: '63e5f3566b25e334993621e8',
     index: 31,
     guid: '2c2ea022-bd95-425f-9994-167206986965',
-    status: 'Draft',
+    status: 'Idea',
     title: 'nisi eiusmod',
     description:
       'Ullamco veniam nulla reprehenderit est et sint ullamco excepteur consequat enim dolor aute. Eiusmod eu Lorem cillum tempor et duis quis anim amet nostrud pariatur. Qui qui occaecat irure tempor cillum adipisicing ullamco occaecat dolor aliqua sunt adipisicing. Cupidatat sint ad mollit enim eu fugiat magna tempor in nulla minim ipsum consectetur.\r\n',
@@ -810,10 +810,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356ef41d6aaa7a0f151',
+    id: '63e5f356ef41d6aaa7a0f151',
     index: 32,
     guid: '7640b153-3842-4454-9c72-973e5a508bd9',
-    status: 'Draft',
+    status: 'Idea',
     title: 'pariatur eu',
     description:
       'Laboris ipsum velit dolore pariatur deserunt est excepteur quis consectetur velit consequat cupidatat incididunt. Eu voluptate magna incididunt excepteur pariatur sint ea do consectetur officia aliqua esse aute aute. Labore ea aute excepteur nulla laborum commodo ipsum labore dolore anim est. Cupidatat et laboris non eu dolore labore consectetur dolor do qui consectetur pariatur officia aute. Magna sit tempor veniam laborum voluptate elit sit.\r\n',
@@ -835,10 +835,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f35652b0ca2ee2286a37',
+    id: '63e5f35652b0ca2ee2286a37',
     index: 33,
     guid: '90627217-63d5-4850-b09f-03d8f01a9f1d',
-    status: 'Draft',
+    status: 'Idea',
     title: 'magna dolore',
     description:
       'Non do laboris ullamco occaecat et proident ut sunt. Anim culpa aute elit exercitation deserunt do Lorem. Esse ipsum non velit fugiat cupidatat magna labore aute aliquip aute deserunt dolore. Esse ea do amet consectetur minim minim irure laborum et velit adipisicing nisi fugiat. Laboris ut est officia eu.\r\n',
@@ -860,10 +860,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356b4514477de820579',
+    id: '63e5f356b4514477de820579',
     index: 34,
     guid: 'aada50b6-d2e0-4580-a3f2-03628b93bb60',
-    status: 'Draft',
+    status: 'Idea',
     title: 'irure et',
     description:
       'Amet duis enim id et irure do ad incididunt non. In ea quis nulla mollit minim quis enim consectetur magna deserunt sint tempor fugiat labore. Exercitation nulla esse occaecat eu laborum occaecat. Nisi minim nisi magna dolore veniam occaecat velit exercitation aute sit aliqua.\r\n',
@@ -885,12 +885,13 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356312e18d2503da2e5',
+    id: '63e5f356312e18d2503da2e5',
     index: 35,
     guid: 'dd5e49ef-8a0f-403f-aed9-af8a2adbd54f',
     status: 'Ongoing',
     title: 'aliquip cillum',
-    description: 'Exercitation ea id nisi irure do. Et sint qui ex sint amet deserunt cillum deserunt. Ullamco aliquip anim irure eu.\r\n',
+    description:
+      'Exercitation ea id nisi irure do. Et sint qui ex sint amet deserunt cillum deserunt. Ullamco aliquip anim irure eu.\r\n',
     start_date: '2021-10-23T11:29:30',
     deadline_date: '2017-07-09T12:35:54',
     member: [
@@ -909,7 +910,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f3568d8f9f4abb8f441f',
+    id: '63e5f3568d8f9f4abb8f441f',
     index: 36,
     guid: 'b03469e4-5245-4a2c-8793-60b329da7e8b',
     status: 'Ongoing',
@@ -934,7 +935,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356d34e615ecb6a3bb5',
+    id: '63e5f356d34e615ecb6a3bb5',
     index: 37,
     guid: '250b5e19-2b86-4f3a-a9fa-33a97be9e2b3',
     status: 'Completed',
@@ -959,7 +960,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356ccef6d43aff27c4d',
+    id: '63e5f356ccef6d43aff27c4d',
     index: 38,
     guid: '122678f7-d729-494d-9015-44232f927162',
     status: 'Completed',
@@ -984,7 +985,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356facc4c628302a184',
+    id: '63e5f356facc4c628302a184',
     index: 39,
     guid: 'a2ad7aef-dfab-418b-b6d8-09f407f56e3a',
     status: 'Completed',
@@ -1009,10 +1010,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356514a3d856bb5660f',
+    id: '63e5f356514a3d856bb5660f',
     index: 40,
     guid: 'e3932c65-769d-4e31-99b2-a8f7b61e8f85',
-    status: 'Draft',
+    status: 'Idea',
     title: 'veniam id',
     description:
       'Id cillum qui aliqua adipisicing reprehenderit officia. Quis aliqua laboris ullamco consectetur ipsum. Aliquip cupidatat voluptate occaecat excepteur ullamco non elit eiusmod nulla ea. Labore sit aute non velit cillum nostrud consectetur velit ea minim ad pariatur aute.\r\n',
@@ -1034,10 +1035,10 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356eb862bb8de9c35f0',
+    id: '63e5f356eb862bb8de9c35f0',
     index: 41,
     guid: '0d398c7f-2469-4d53-a46f-75ebf436abba',
-    status: 'Draft',
+    status: 'Idea',
     title: 'quis adipisicing',
     description:
       'Eu amet et eu qui aute nostrud sint minim consectetur voluptate ex voluptate nostrud nulla. Ipsum dolor qui exercitation adipisicing velit fugiat. Et non occaecat do aliquip adipisicing. Aute proident laborum duis ea ut pariatur minim dolor reprehenderit deserunt. Excepteur adipisicing dolore nisi enim deserunt voluptate incididunt elit aute ex duis.\r\n',
@@ -1059,7 +1060,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f35675c06275f5d4f13f',
+    id: '63e5f35675c06275f5d4f13f',
     index: 42,
     guid: '8f4aa42f-1281-441e-bb20-ef9ceb0c5c12',
     status: 'Completed',
@@ -1084,7 +1085,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356afb7488d6a596ce1',
+    id: '63e5f356afb7488d6a596ce1',
     index: 43,
     guid: 'd2bb8f48-32a8-45a2-a097-ca4ce349d386',
     status: 'Completed',
@@ -1109,7 +1110,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f3564c7582faefceacd8',
+    id: '63e5f3564c7582faefceacd8',
     index: 44,
     guid: '7c331a0e-3eff-44e5-9db4-b7958e3c8034',
     status: 'Ongoing',
@@ -1134,7 +1135,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356a5008e46137f8356',
+    id: '63e5f356a5008e46137f8356',
     index: 45,
     guid: '4a331e32-6eaf-469f-855a-5f23ef52ee6f',
     status: 'Completed',
@@ -1159,7 +1160,7 @@ export const projects = [
     ],
   },
   {
-    _id: '63e5f356b46ff46d0f42f5d3',
+    id: '63e5f356b46ff46d0f42f5d3',
     index: 46,
     guid: 'b79922f5-b550-4c8d-9465-d869df8f9426',
     status: 'Completed',
@@ -1180,81 +1181,6 @@ export const projects = [
       {
         id: 2,
         name: 'Dorothea Whitley',
-      },
-    ],
-  },
-  {
-    _id: '63e5f3561d5adc10ea0f6800',
-    index: 47,
-    guid: 'c3aac75c-d54e-40dd-8d17-8785efef749a',
-    status: 'Completed',
-    title: 'magna ad',
-    description:
-      'Id consectetur aute amet amet laborum anim ipsum fugiat. Consequat incididunt minim dolore consectetur irure. Voluptate nulla laboris occaecat aliquip voluptate aute amet adipisicing aute voluptate. Sunt laborum pariatur veniam id in labore cillum. Sunt officia occaecat occaecat cupidatat dolore minim tempor consequat culpa fugiat ad do non veniam.\r\n',
-    start_date: '2018-02-27T07:26:21',
-    deadline_date: '2018-10-04T07:31:57',
-    member: [
-      {
-        id: 0,
-        name: 'Shana Alston',
-      },
-      {
-        id: 1,
-        name: 'Crane Wiggins',
-      },
-      {
-        id: 2,
-        name: 'Tyson Holcomb',
-      },
-    ],
-  },
-  {
-    _id: '63e5f356848a36fb6c956961',
-    index: 48,
-    guid: 'aa42e33e-eaaf-4d92-a9e3-82bc3aabc239',
-    status: 'Draft',
-    title: 'pariatur nulla',
-    description:
-      'Do duis sunt proident adipisicing laboris in. Cupidatat nisi occaecat aliquip commodo elit magna laborum in nisi anim voluptate fugiat nulla. Ut adipisicing tempor Lorem adipisicing ea eu excepteur velit. Sunt veniam do excepteur non nisi sunt cupidatat fugiat culpa incididunt deserunt id est aliquip. Magna nulla nisi amet veniam et ullamco ullamco anim veniam Lorem Lorem cupidatat.\r\n',
-    start_date: '2020-08-30T07:11:53',
-    deadline_date: '2017-09-17T10:08:35',
-    member: [
-      {
-        id: 0,
-        name: 'Nieves Nieves',
-      },
-      {
-        id: 1,
-        name: 'Osborn Stokes',
-      },
-      {
-        id: 2,
-        name: 'Fischer Meadows',
-      },
-    ],
-  },
-  {
-    _id: '63e5f356213bd000fc5052fb',
-    index: 49,
-    guid: 'bd004e05-42de-4de3-918b-311b1df32f93',
-    status: 'Ongoing',
-    title: 'velit duis',
-    description:
-      'Ipsum cupidatat fugiat velit aliqua ea sunt deserunt Lorem eu. Occaecat id non fugiat labore in proident sunt sint labore dolor occaecat do voluptate commodo. Dolore dolore et cillum incididunt amet laborum quis qui amet minim. Dolor minim in sint qui ex. Incididunt amet ex nisi magna. Ad eiusmod culpa et irure officia quis sint aliquip esse nostrud Lorem. Culpa dolor commodo elit ad qui irure eiusmod ipsum.\r\n',
-    start_date: '2014-09-04T07:35:55',
-    deadline_date: '2016-03-03T03:27:32',
-    member: [
-      {
-        id: 0,
-        name: 'Carroll Cotton',
-      },
-      {
-        id: 1,
-        name: 'Nunez Salazar',
-      },
-      {
-        id: 2,
-        name: 'Talley Phelps',
       },
     ],
   },
